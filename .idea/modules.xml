@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/demo.iml" filepath="$PROJECT_DIR$/gateway-service/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first-service/microservicetest.iml" filepath="$PROJECT_DIR$/first-service/microservicetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-service/secound.iml" filepath="$PROJECT_DIR$/second-service/secound.iml" />
+    </modules>
+  </component>
+</project>
