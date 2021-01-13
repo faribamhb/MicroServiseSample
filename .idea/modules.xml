@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway-service/demo.iml" filepath="$PROJECT_DIR$/gateway-service/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first-service/first-service.iml" filepath="$PROJECT_DIR$/first-service/first-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/first-service/microservicetest.iml" filepath="$PROJECT_DIR$/first-service/microservicetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-service/second-service.iml" filepath="$PROJECT_DIR$/second-service/second-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/second-service/secound.iml" filepath="$PROJECT_DIR$/second-service/secound.iml" />
     </modules>
   </component>

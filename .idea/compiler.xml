@@ -9,16 +9,18 @@
         <module name="config-server" />
         <module name="demo" />
         <module name="discovery-server" />
-        <module name="microservicetest" />
-        <module name="secound" />
+        <module name="first-service" />
+        <module name="gateway-service" />
+        <module name="second-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="demo" target="1.5" />
       <module name="discovery-server" target="1.8" />
-      <module name="microservicetest" target="1.8" />
-      <module name="secound" target="1.8" />
+      <module name="first-service" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="second-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
