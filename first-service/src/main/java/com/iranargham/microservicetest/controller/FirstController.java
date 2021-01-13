@@ -11,4 +11,8 @@ public class FirstController {
     public String test() {
         return "Hello JavaInUse Called in First Service";
     }
+    @GetMapping("/message2")
+    public String test2() {
+        return "Hello JavaInUse Called in First2 Service";
+    }
 }
