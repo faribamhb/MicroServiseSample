@@ -1,4 +1,4 @@
-package com.iranargham.microservicetest;
+package com.iranargham.first;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

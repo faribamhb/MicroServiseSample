@@ -1,6 +1,14 @@
 spring:
+ profiles:
   application:
     name: config-server
+  active: native
+ cloud:
+   config:
+     server:
+       native:
+         search-locations: classpath:/common-config
+
 eureka:
   client:
     smsService-url:

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: first
+
+  jpa:
+    hibernate:
+    generate-ddl: true
+    ddl-auto: update
+    show-sql: true
+
+
+  #change url to jdbc-url
+  datasource:
+    url: jdbc:oracle:thin:@//172.17.18.28:1521/sabadvp
+    username: smp
+    password: smpsmp
+    driver-class-name: oracle.jdbc.OracleDriver
+
