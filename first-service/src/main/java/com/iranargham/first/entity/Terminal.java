@@ -1,8 +1,6 @@
 package com.iranargham.first.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,6 +10,8 @@ import java.io.Serializable;
 @Table(name = "Terminal")
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter  //Generates getters
+@Setter
 @Builder(toBuilder = true)
 public class Terminal implements Serializable {
 
