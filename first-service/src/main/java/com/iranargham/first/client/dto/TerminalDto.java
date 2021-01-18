@@ -15,4 +15,15 @@ public class TerminalDto implements Serializable {
     private String  terminalName;
     private String  description;
     private Long  terminalNumber;
+
+
+    @Override
+    public String toString() {
+        return "TerminalDto{" +
+                "active='" + active + '\'' +
+                ", terminalName=" + terminalName +
+                ", description='" + description + '\'' +
+                ", terminalNumber='" + terminalNumber + '\'' +
+                '}';
+    }
 }

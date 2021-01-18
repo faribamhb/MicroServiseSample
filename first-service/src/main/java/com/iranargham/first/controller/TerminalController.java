@@ -1,10 +1,10 @@
 package com.iranargham.first.controller;
 
 import com.iranargham.first.client.dto.TerminalDto;
+import com.iranargham.first.common.exceptions.ServiceException;
 import com.iranargham.first.entity.Terminal;
 import com.iranargham.first.repository.TerminalRepository;
 import com.iranargham.first.service.TerminalService;
-import org.hibernate.service.spi.ServiceException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +26,7 @@ public class TerminalController {
     }
 
     @GetMapping(value = "/showTerminal", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Terminal>> getAllBranches(){
+    public ResponseEntity<List<Terminal>> findAllTerminal(){
 
         return new ResponseEntity<>(terminalRepository.findAll(), HttpStatus.OK);
     }
@@ -34,9 +34,15 @@ public class TerminalController {
 
     @PostMapping(value = "/addTerminal", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 
-    public ResponseEntity<TerminalDto> searchAtmBranch(@Valid @RequestBody TerminalDto terminalDto) throws ServiceException {
+    public ResponseEntity<TerminalDto> insertTerminal(@Valid @RequestBody TerminalDto terminalDto) throws ServiceException {
         return new ResponseEntity<>(terminalService.insertTerminal(terminalDto), HttpStatus.OK);
     }
 
+
+
+    @GetMapping(value = "/findByTerminalName/{terminalName}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<TerminalDto> findByTerminalName(@PathVariable String terminalName) throws ServiceException {
+        return new ResponseEntity<>(terminalService.findByTerminalName(terminalName), HttpStatus.OK);
+    }
 
 }

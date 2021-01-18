@@ -9,7 +9,7 @@ import org.mapstruct.ReportingPolicy;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface TerminalMapper {
 
-    Terminal TerminalDtoTOTerminal(TerminalDto terminalDto);
+    Terminal terminalDtoTOTerminal(TerminalDto terminalDto);
 
     TerminalDto terminalToTerminalDto(Terminal save);
 }
